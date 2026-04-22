@@ -28,7 +28,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
+    <header className="animate-fade-in sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
       <div className="section-wrapper flex h-16 items-center justify-between">
         <a href="#" className="text-lg font-semibold tracking-tight text-white">
           NeuroFlow <span className="text-cyan-300">AI</span>

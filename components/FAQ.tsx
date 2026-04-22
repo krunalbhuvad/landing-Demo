@@ -12,8 +12,8 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="section-wrapper py-16 sm:py-20">
-      <h2 className="section-title">Answers before you ask</h2>
-      <p className="section-subtitle">
+      <h2 className="animate-fade-in-up section-title">Answers before you ask</h2>
+      <p className="animate-fade-in-up section-subtitle" style={{ animationDelay: "120ms" }}>
         Objections handled clearly so your team can move forward with confidence.
       </p>
 
@@ -21,7 +21,11 @@ export default function FAQ() {
         {faqs.map((item, index) => {
           const isOpen = openQuestion === index;
           return (
-            <article key={item.question} className="glass-panel rounded-2xl p-5">
+            <article
+              key={item.question}
+              className="glass-panel animate-fade-in-up rounded-2xl p-5"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <button
                 type="button"
                 className="flex w-full items-center justify-between gap-4 text-left"

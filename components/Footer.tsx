@@ -4,7 +4,7 @@ const socialLinks = ["X", "LinkedIn", "GitHub"];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 py-10">
+    <footer className="animate-fade-in border-t border-white/10 py-10">
       <div className="section-wrapper flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-base font-semibold text-white">
